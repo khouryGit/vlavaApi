@@ -14,4 +14,5 @@ app.get('/services',(req,res)=>{
     res.send (data);   
 })
 
-app.listen(3000)
+const _PORT = env.PORT || 3000;
+app.listen(_PORT)
